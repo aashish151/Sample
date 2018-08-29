@@ -43,19 +43,3 @@ html{
 hr.style1{
 	border-top: 1px solid #FFF;
 }
-
-.clickable {
-     cursor:pointer;
-  }
-
-#wrap {
-    border: 0px solid #333;
-    width:! 100%;
-    height: auto;
-  margin: 0 auto;
-}
-
-#images img {
-    width: 100%;
-    height: auto;
-}
