@@ -14,7 +14,115 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
+    <style>
+    #Navbar {
+      overflow: hidden;
+      background-color: black;
+    width:100%;
+    position:fixed;
+    z-index:1;
+    margin-bottom:50px;
+    opacity:0.8;
+    transition: top 0.5s;
+    }
 
+    #Navbar a {
+      float: left;
+      display: block;
+      color: red;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 19px;
+    font-family:Baskerville;
+    }
+
+    #Navbar a:hover {
+      background-color: black;
+    opacity:0.8;
+      color:darkred;
+    }
+
+    #Navbar a.active {
+      color: silver;
+    }
+
+    .content {
+      padding: 16px;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 60px;
+    }
+
+
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: red;
+        padding: 14px 16px;
+        background-color: gray;
+        font-family: inherit;
+        margin: 0;
+      display: block;
+      color:red;
+    background-color:black;
+    opacity: 1;
+      text-align: center;
+      padding: 30px32px;
+      text-decoration: none;
+      font-size: 19px;
+    float:left;
+    }
+
+    .Navbar a:hover, .dropdown:hover .dropbtn {
+       background-color: darkgray;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+    color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: silver;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: darkgray;
+        color:silver;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        color:silver;
+    }
+
+    </style>
     <body data-offset="50" style="font-family: 'Raleway', sans-serif;">
 
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
