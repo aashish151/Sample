@@ -185,6 +185,17 @@ background:black;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+	    
+	    
+@-webkit-keyframes fade {
+  from {display: block;} 
+  to {margin: 0;}
+}
+
+@keyframes fade {
+ from {opacity: .4} 
+  to {opacity: 1}
+}
 
 
         .topnav {
@@ -200,7 +211,7 @@ background:black;
 #logo {
     display: inline-block;
     vertical-align: top;
-	margin:5px;
+	margin:2.5px;
     width: 48px;
     height: 48px;   /* if you want it vertically middle of the navbar. */
 }
@@ -215,6 +226,17 @@ background:black;
       font-size: 17px;
       z-index:2;
     }
+	    .topnav h1{
+		float: left;
+      display: block;
+      color: silver;
+      text-align: center;
+      padding: 10px 10px;
+      transition: 0.5s;
+      text-decoration: none;
+      font-size: 20px;
+      z-index:2;    
+	    }
 
     .active {
       background-color:#333;
