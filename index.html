@@ -81,24 +81,24 @@ background:black;
 }
 
 .image {
-  opacity: 1;
+  opacity: 10;
   display: block;
   width: 100%;
   height: auto;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: .2s ease;
   opacity: 0;
   text-align: center;
 }
 
 .container:hover .image {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .container:hover .middle {
-  opacity: 1;
+  opacity: 10;
 }
 
 .text {
@@ -110,7 +110,7 @@ background:black;
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin:none;
 }
 
 .mySlides {
@@ -181,9 +181,9 @@ background:black;
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.3s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.3s;
 }
 	    
 	    
@@ -193,7 +193,7 @@ background:black;
 }
 
 @keyframes fade {
- from {opacity: .4} 
+ from {opacity: .9} 
   to {opacity: 1}
 }
 
@@ -1674,34 +1674,34 @@ function myFunction() {
 }
 </script>
 <script>
-
+	
  var slideIndex = 0;
   var slides = document.getElementsByClassName("mySlides");
 
 showSlides();
-
+ 
 function plusSlides(n) {
   showSlides(slideIndex -n);
 }
 
-function showSlides() {
-    var i;
+function showSlides() {    
+    var i;    
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = "none"; 
 
     }
     slideIndex++;
 
-    if (slideIndex> slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 6000); // Change image every 5 seconds
-
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 45000); // Change image every 5 seconds
+        
 }
 
 function currentSlide(no) {
-    var i;
+    var i;    
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = "none"; 
     }
     slideIndex = no;
 
@@ -1710,7 +1710,7 @@ function currentSlide(no) {
   if(newslideIndex < 5 && newslideIndex > 0){
      currentSlide(newslideIndex);
   }
-}
+}	
 
 </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
