@@ -55,7 +55,6 @@ color: red;
 	overflow: hidden;
 	background-color: black;
 	opacity:0.95;
-	max-width:100%;
 	width:100%
 	width: auto\9;
 transition: 0.5s;
@@ -170,7 +169,7 @@ topnav ul li {
 		z-index:2;
 	}
 	.topnav a.icon {
-		float: right;
+		float: left;
 		display: block;
 		z-index:2;
 	}
@@ -181,12 +180,12 @@ topnav ul li {
 	.topnav.responsive {position:fixed;}
 	.topnav.responsive .icon {
 		position:fixed;
-		right: 0;
+		left: 0;
 		top: 0;
 		z-index:2;
 	}
 	.topnav.responsive a {
-		float: none;
+		float: left;
 		display: block;
 		text-align: left;
 		z-index:2;
