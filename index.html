@@ -924,60 +924,40 @@
 
         </div>
         <br><br>
-	      </div><!--
-        <div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-<div class="container" style="background:black;">
-    <img src="img/slideshow.png" style="height:100%;width:100%;" class="image" id="disec"><div class="middle"><div class="text"><div class="link">
-	<div class="thislink" id="thislink" style="color:white;"><h1>Sponsor 1</h1><a href="#instagram"><i class="fab fa-4x fa-instagram mlogo"></i></a><a href="#facebook"><i class="fab fa-4x fa-facebook-square mlogo"></i></a></div>
-</div></div>
+	      </div><div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <div class="container" style="background:black;">
+  <img src="img_nature_wide.jpg" style="width:100%"><div class="middle"><div class="text"><div class="link">
+<div class="thislink" id="thislink" style="color:white;">Caption Text</div></div></div></div></div></div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <div class="container" style="background:black;">
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="middle"><div class="text"><div class="link">
+<div class="thislink" id="thislink" style="color:white;">Caption Text</div></div></div></div></div></div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <div class="container" style="background:black;">
+  <img src="img_mountains_wide.jpg" style="width:100%"><div class="middle"><div class="text"><div class="link">
+<div class="thislink" id="thislink" style="color:white;">Caption Text</div></div></div></div></div></div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </div>
-  </div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-<div class="container" style="background:black;">
- <img src="img/slideshow.png" style="height:100%;width:100%;" class="image" id="who"><div class="middle"><div class="text"><div class="link">
-<div class="thislink" id="thislink" style="color:white;"><h1>Sponsor 2</h1><a href="#instagram"><i class="fab fa-4x fa-instagram mlogo"></i></a><a href="#facebook"><i class="fab fa-4x fa-facebook-square mlogo"></i></a></div>
-</div></div></div>
-</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3/  4</div>
-<div class="container" style="background:black;">
-<img src="img/slideshow.png" style="height:100%;width:100%;" class="image" id="hrc"><div class="middle">
-<div class="text"><div class="link">
-<div class="thislink" id="thislink" style="color:white;"><h1>Sponsor 3</h1><a href="#instagram"><i class="fab fa-4x fa-instagram mlogo"></i></a><a href="#facebook"><i class="fab fa-4x fa-facebook-square mlogo"></i></a></div>
-</div></div></div>
-  </div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-<div class="container" style="background:black;">
-<img src="img/slideshow.png" style="height:100%;width:100%;" class="image" id="unhcr"><div class="middle"><div class="text"><div class="link">
-<div class="thislink" id="thislink" style="color:white;"><h1>Sponsor 4</h1><a href="#instagram"><i class="fab fa-4x fa-instagram mlogo"></i></a><a href="#facebook"><i class="fab fa-4x fa-facebook-square mlogo"></i></a></div>
-</div></div></div></div>  </div>
-
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1)">&#10095;</button>
-
-  </div>
-
-
 <br>
 
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
-  </section></article>-->
 <br>
 
 
@@ -1368,47 +1348,35 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-</script><!--
-<script>
+</script>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
- var slideIndex = 0;
-  var slides = document.getElementsByClassName("mySlides");
-
-showSlides();
-
-function plusSlides(n) {
-  showSlides(slideIndex -n);
-}
-
-function showSlides() {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-
-    }
-    slideIndex++;
-
-    if (slideIndex> slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 45000); // Change image every 5 seconds
-
-}
-
-function currentSlide(no) {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex = no;
-
-    slides[no-1].style.display = "block";
-
-  if(newslideIndex < 5 && newslideIndex > 0){
-     currentSlide(newslideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-}
 
-</script>-->
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
