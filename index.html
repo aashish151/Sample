@@ -30,7 +30,7 @@
 
 }
 
-.image {
+#image {
   background:black;
   opacity: 1;
   display: block;
@@ -1208,12 +1208,17 @@
       </div>
 </section>
 
-<div id="fixed" style="color:red;background:white;">Hello</div>
+<div id="fixed" style="color:black;background:blue;">Hello</div>
     <script src="js/wow.min.js"></script>
 
     <script>
     new WOW().init();
     </script>
+
+
+
+
+
     <script>
     var TxtType = function(el, toRotate, period) {
             this.toRotate = toRotate;
@@ -1434,6 +1439,16 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+</script>
+<script>
+window.onload = function() {
+  var w = window.innerWidth;
+    var h = window.innerHeight;
+    document.getElementById("fixed").innerHTML = w;
+document.getElementById("image").style.clip = "rect(0px,100px,30px,0px)";
+}
+
+
 </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
