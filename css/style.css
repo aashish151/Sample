@@ -57,6 +57,7 @@ color: red;
 	opacity:0.95;
 	max-width:100%;
 	width:100%
+	width: auto\9;
 transition: 0.5s;
 top:0px;
 position:fixed;
