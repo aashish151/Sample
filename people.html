@@ -1,0 +1,71 @@
+<style>
+#container {
+    position: relative;
+    width:650px;
+    height:auto;
+
+}
+
+.image {
+  background:black;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#container:hover .image {
+  opacity: 0.3;
+}
+
+#container:hover .middle {
+  opacity: 1;
+}
+
+#text {
+  background-color: inhert;
+  color: white;
+  font-size: 26px;
+  padding: 16px 32px;
+}
+</style>
+
+<div id="image_map">
+<map name="map_example">
+ <area href="#person1" id="per1" onmouseout= "writeText1('')" onmouseover="writeText('Person 1:Person 1 is very funny nice good.')" alt="per1" shape=rect coords="74,64,171,290">
+ <area href="#person2" id="per2" onmouseout= "writeText1('')" onmouseover="writeText('Person 2:Person 2 is very funny nice good.')" alt="per2" shape=rect coords="177,48,273,329">
+ <area href="#person3" id="per3" onmouseout= "writeText1('')" onmouseover="writeText('Person 3:Person 3 is very funny nice good.')" alt="per3" shape=rect coords="285,34,370,358">
+ <area href="#person4" id="per4" onmouseout= "writeText1('')" onmouseover="writeText('Person 4:Person 4 is very funny nice good.')" alt="per4" shape=rect coords="397,56,467,328">
+ <area href="#person5" id="per5" onmouseout= "writeText1('')" onmouseover="writeText('Person 5:Person 5 is very funny nice good.')" alt="per5" shape=rect coords="493,77,561,298">
+</map>
+<div id="container" >
+  <img src="img/people.png" alt="Avatar" id="image" style="width:650px;height:auto;background-color:black;" usemap="#map_example">
+  <div class="middle">
+    <div id="text"></div>
+  </div>
+</div>
+
+ </div>
+
+ <script>
+function writeText(txt){
+  document.getElementById('image').style.opacity = 0.2;
+document.getElementById("text").innerHTML = txt;
+}
+function writeText1(txt){
+  document.getElementById('image').style.opacity = 1;
+document.getElementById("text").innerHTML = txt;
+}
+ </script>
