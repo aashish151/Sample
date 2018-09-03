@@ -1,33 +1,10 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
 
-body {
-  font-size: 1.6rem;
-  font-family: sans-serif;
-  color: #ffffff;
-  background: #001426 url("../img/bg-pattern.png");
-}
-
-a {
-  color: #196a74;
-  text-decoration: none;
-}
-
-/* -------------------------------- 
-
-Main Components 
-
--------------------------------- */
 .cd-background-wrapper {
   background-color: #001426;
   position: relative;
