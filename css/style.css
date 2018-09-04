@@ -50,3 +50,45 @@ body{max-width:100%;width:auto\9;height:auto;}
 .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+@font-face{font-family:'Raleway', sans-serif;src:url(fonts/Raleway-Regular.ttf);}
+html{overflow-x:hidden;font-family:'Raleway', sans-serif;}
+br{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
+@media (min-width:768px){.modal-xl{width:90%;max-width:1200px;}}
+.button2{background-color:white;color:#54a0ff;border:2px solid #54a0ff;}
+.button2:hover{background-color:#54a0ff;color:white;}
+.logo{color:#54a0ff;}
+.mlogo{color:#FFF;}
+hr.style1{border-top:1px solid #FFF;}
+hr.style2{border-top:1px solid #54a0ff;}
+.bgtype1{background-color:#FFF;color:#54a0ff;padding:35px 20px;}
+.bgtype2{background-color:#54a0ff;color:#FFF;padding:35px 20px;}
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#000;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#FFF;
+}
+#scroll:hover {
+    background-color:#000;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}

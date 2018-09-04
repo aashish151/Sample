@@ -1179,6 +1179,8 @@
   <br><a href="#home" style="float:right;background:red;color:white;text-align:center;text-decoration:none;padding:10px 30px;font-size:20px"> TOP</a>
 <br>
 
+<a href="#home" id="scroll" style="display: none;"><span></span></a>
+
       </div>
 </section>
 
@@ -1381,6 +1383,21 @@ if (scrollTop<n1){
       document.getElementById("navx").style.background = "black";
   }
 }
+</script>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
 </script>
 <script>
 function writeText(txt){
