@@ -47,6 +47,60 @@ body{max-width:100%;width:auto\9;height:auto;}
 @media screen and (max-width:750px){#container{width:360px;height:auto;}
 #image{width:360px;heigth:auto;float:left;}
 }
+
+.blinking-cursor {
+  color: white;
+  -webkit-animation: 0.7s blink step-end infinite;
+  -moz-animation: 0.7s blink step-end infinite;
+  -ms-animation: 0.7s blink step-end infinite;
+  -o-animation: 0.7s blink step-end infinite;
+  animation: 0.7s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
 .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
