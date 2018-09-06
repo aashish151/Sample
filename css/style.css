@@ -38,7 +38,7 @@ topnav ul li{display:inline-block;}
 .topnav.responsive .dropdown .dropbtn{display:block;top:40px;width:100%;text-align:left;z-index:2;}
 }
 body{max-width:100%;width:auto\9;height:auto;}
-#container{position:relative;max-width:630px;height:auto;width:auto\9;object-fit:cover;}
+#container{position:relative;max-width:867px;height:319px;width:auto\9;object-fit:cover;}
 #image{background:black;opacity:1;display:block;object-fit:cover;height:auto;transition:.5s ease;backface-visibility:hidden;}
 .middle{transition:.5s ease;position:absolute;top:75%;left:50%;transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);text-align:center;}
 #container:hover .image{opacity:0.3;}
