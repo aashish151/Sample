@@ -44,8 +44,8 @@ body{max-width:100%;width:auto\9;height:auto;}
 #container:hover .image{opacity:0.3;}
 #container:hover .middle{opacity:1;}
 #text{background-color:inhert;color:white;font-size:26px;padding:16px 32px;}
-@media screen and (max-width:750px){#container{width:360px;height:auto;}
-#image{width:360px;heigth:auto;float:left;}
+@media screen and (max-width:900px){#container{width:360px;height:auto;display:none;}
+#image{width:360px;heigth:auto;float:left;display:none;}
 }
 
 .blinking-cursor {
