@@ -105,8 +105,8 @@ body{max-width:100%;width:auto\9;height:auto;}
 .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
-@font-face{font-family:'Raleway', sans-serif;src:url(fonts/Raleway-Regular.ttf);}
-html{overflow-x:hidden;font-family:'Raleway', sans-serif;}
+@font-face{font-family:'Kodchasan', sans-serif;src:url(fonts/Kodchasan-ExtraLight.ttf);}
+html{overflow-x:hidden;font-family:'Kodchasan', sans-serif;}
 br{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
 @media (min-width:768px){.modal-xl{width:90%;max-width:1200px;}}
 .button2{background-color:white;color:#54a0ff;border:2px solid #54a0ff;}
