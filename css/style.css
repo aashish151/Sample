@@ -38,6 +38,7 @@ topnav ul li{display:inline-block;}
 .topnav.responsive .dropdown-content{position:fixed;}
 .topnav.responsive .dropdown .dropbtn{display:block;top:40px;width:100%;text-align:left;z-index:2;}
 }
+#bio{margin-left:100px;margin-right:100px}
 body{max-width:100%;width:auto\9;height:auto;}
 #container{position:relative;max-width:867px;height:319px;width:auto\9;object-fit:cover;transition:1.5s ease;}
 #image{background:black;opacity:1;display:block;object-fit:cover;height:auto;transition:1.5s ease;backface-visibility:hidden;}
