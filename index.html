@@ -63,11 +63,11 @@
           <h1 class="d-block d-sm-none wow fadeInDown">CHIRECJMUN 2018</h4>
           <hr class="style1" style="width: 55%;">
           <br><br>
-          <div class="container1">
-          <p id="typewriter" data-typewriter="Debate, Determine, Resolve, Apply Now." style="display:inline;font-size:3rem;"></p><span class="blinking-cursor" style="color:white;display:inline;font-size:3rem;">|</span>
-          </div>
+          <h4 class="d-none d-md-block wow fadeInDown display-3">Debate. Determine. Resolve</h4>
+          <h2 class="d-none d-sm-block d-md-none wow fadeInDown">Debate. Determine. Resolve</h2>
+          <h5 class="d-block d-sm-none wow fadeInDown">Debate. Determine. Resolve</h5>
           <br><br>
-          <a href="#gformlink" target="_blank"><button class="btn btn-lg btn-outline-light wow rollIn">Apply Now</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSddj9ZLC_OrV-Qk_zaFSIFLdhOOz5TpXPy_zAgJKrtIYi86PQ/viewform" target="_blank"><button class="btn btn-lg btn-outline-light wow rollIn">Apply Now</button></a>
           <br><br><br><br>
         </div>
       </div>
@@ -273,7 +273,7 @@
                 </div>
               </div>
             </div>
-          </div></div>
+          </div></div><br>
           <div class="col-lg-3 wow bounceIn">
             <div class="card" style="background-color: #FFF; color: #54a0ff; padding: 35px 20px;">
               <img src="img/JCC.png" class="img-fluid card-img-top rounded mx-auto d-block" alt="JCC Logo"><br>
@@ -338,7 +338,7 @@
                 </div>
               </div>
             </div></div>
-          </div>
+          </div><br>
           <div class="col-lg-3 wow bounceIn">
             <div class="card" style="background-color: #FFF; color: #54a0ff; padding: 35px 20px;">
               <img src="img/UNSC.png" class="img-fluid card-img-top rounded mx-auto d-block" alt="UNSC Logo"><br>
@@ -405,7 +405,7 @@
                 </div>
               </div>
             </div></div>
-          </div>
+          </div><br>
         </div>
         <div class="row">
           <div class="col-lg-3 wow bounceIn">
@@ -472,7 +472,7 @@
                 </div>
               </div></div></div>
             </div><br>
-          </div>
+          </div><br>
             <div class="col-lg-3 wow bounceIn">
               <div class="card" style="background-color: #FFF; color: #54a0ff; padding: 35px 20px;">
                 <img src="img/SOCHUM.png" class="img-fluid card-img-top rounded mx-auto d-block" alt="SOCHUM Logo"><br>
@@ -536,7 +536,7 @@
                     </div>
                   </div>
                 </div></div></div>
-                </div>
+              </div><br>
               </div><br>
           <div class="col-lg-3 wow bounceIn">
             <div class="card" style="background-color: #FFF; color: #54a0ff; padding: 35px 20px;">
@@ -602,7 +602,7 @@
                 </div>
               </div>
             </div><br>
-          </div></div></div>
+          </div></div><br></div>
           <div class="col-lg-3 wow bounceIn">
             <div class="card" style="background-color: #FFF; color: #54a0ff; padding: 35px 20px;">
               <img src="img/ILO.png" class="img-fluid card-img-top rounded mx-auto d-block" alt="ILO Logo"><br>
@@ -844,16 +844,34 @@
             <center>
             <div class="row">
               <div class="col-lg-3 wow bounceIn">
-                <div class="card" style="background-color: #FFF; color: #54a0ff; padding: 35px 20px;">
-                  <img src="img/SB.png" class="img-fluid card-img-top rounded" alt="SOCHUM Logo"><br>
-                  <div class="card-header">Sarthak Bansal Fan Club</div>
+                <div class="card" style="background-color: #54a0ff; color: #fff ; padding: 35px 20px;">
+                  <img src="img/TBD.png" class="img-fluid card-img-top rounded" alt="Sponsor"><br>
+                  <div class="mcard-header">Sponsor</div>
                   </div>
                 </div><br>
-            </div>
-        </div>
-      </div>
-    </center>
-        <br>
+                <div class="col-lg-3 wow bounceIn">
+                  <div class="card" style="background-color: #54a0ff; color: #fff ; padding: 35px 20px;">
+                    <img src="img/TBD.png" class="img-fluid card-img-top rounded" alt="Sponsor"><br>
+                    <div class="mcard-header">Sponsor</div>
+                    </div>
+                  </div><br>
+                  <div class="col-lg-3 wow bounceIn">
+                    <div class="card" style="background-color: #54a0ff; color: #fff ; padding: 35px 20px;">
+                      <img src="img/TBD.png" class="img-fluid card-img-top rounded" alt="Sponsor"><br>
+                      <div class="mcard-header">Sponsor</div>
+                      </div>
+                    </div><br>
+                    <div class="col-lg-3 wow bounceIn">
+                      <div class="card" style="background-color: #54a0ff; color: #fff ; padding: 35px 20px;">
+                        <img src="img/TBD.png" class="img-fluid card-img-top rounded" alt="Sponsor"><br>
+                        <div class="mcard-header">Sponsor</div>
+                        </div>
+                      </div><br>
+                      </div>
+                  </div>
+                </div>
+              </center>
+                  <br>
 
 </section>
       <section id="faq" class="section"><br><br>
@@ -1035,62 +1053,6 @@
     <script>
     new WOW().init();
     </script>
-    <script>
-    var typewriter = function(txt) {
-    var container = document.getElementById('typewriter'),
-      speed = 28,
-      i = 0,
-      wordsObj = txt.split(" ")
-    container.textContent = "";
-    console.log(txt)
-    runAllWords();
-    function runAllWords() {
-
-      if (i < wordsObj.length) {
-        var a = (i == 0) ? i : i - 1;
-        setTimeout(function() {
-          showWord(wordsObj[i], 0)
-        }, wordsObj[a].length * speed);
-      }
-    }
-
-    function showWord(word, countWord) {
-      if (countWord < word.length) {
-        setTimeout(function() {
-          showLetter(word, countWord)
-        }, speed);
-      } else {
-        container.textContent = container.textContent + " ";
-        i += 1;
-        runAllWords();
-      }
-      if (i === wordsObj.length) {
-        console.log('complete')
-      }
-    }
-
-    function showLetter(word, countWord) {
-      container.textContent = container.textContent + word[countWord];
-      showWord(word, countWord + 1);
-    }
-  }
-
-var i = 0;
-function myLoop () {
-
-   var dataType = document.getElementById('typewriter').dataset.typewriter,
-       w = dataType.split(',')
-   setTimeout(function () {
-      typewriter(w[i]);
-      i++;
-      if (i < w.length) {
-         myLoop();
-      }
-   }, 3000)
-}
-
-myLoop();
-    </script>
     <script type="text/javascript">
  $(document).ready(function(){
     $(".topnav a").click(function () {
@@ -1266,7 +1228,7 @@ $("#per9").click(function(){
 });
 $("#per10").click(function(){
     $("#bio").hide();
-    $("#bio").html("<h1>Neel Racherla:</h1><br>Introducing the Deputy Secretary General for CHIREC JMUN 2018-Neel Racherla! Neel is currently studying in 10th grade and started his MUNning experience in 17th grade and has been a passionate debater and an aficionado of security councils since he started his MUN career. He loves to play sports and basically everything else. He might be short but he probably has a louder voice than anybody else. Neel hates to lose - in fact, he’s almost too competitive at what he does. He always ensures a smile on everyone’s face and promises to make this conference the best in Hyderabad. So mark your calendars for November 2nd, 3rd and 4th and get ready for a once in a lifetime experience!");
+    $("#bio").html("<h1>Neel Racherla:</h1><br>Introducing the Deputy Secretary General for CHIREC JMUN 2018-Neel Racherla! Neel is currently studying in 10th grade and started his MUNning experience in 7th grade and has been a passionate debater and an aficionado of security councils since he started his MUN career. He loves to play sports and basically everything else. He might be short but he probably has a louder voice than anybody else. Neel hates to lose - in fact, he’s almost too competitive at what he does. He always ensures a smile on everyone’s face and promises to make this conference the best in Hyderabad. So mark your calendars for November 2nd, 3rd and 4th and get ready for a once in a lifetime experience!");
     $("#bio").show(1000);
 });
 $("#per11").click(function(){
